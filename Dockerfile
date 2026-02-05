@@ -1,11 +1,13 @@
 # 1. Use a small, secure base image
 FROM nginx:alpine
 
-# 2. Remove default nginx website
-RUN rm -rf /usr/share/nginx/html/*
+
 
 # 3. Copy your project files into nginx
-COPY . /usr/share/nginx/html
+COPY first.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
+COPY index.js /usr/share/nginx/html/index.js
+COPY img /usr/share/nginx/html/img
 
 # 4. Expose port 80
 EXPOSE 80
