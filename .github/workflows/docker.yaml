@@ -23,4 +23,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/rock-paper-scissors:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/rps-game:latest
