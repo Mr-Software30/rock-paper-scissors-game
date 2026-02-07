@@ -24,13 +24,13 @@ Here are some screenshots of the game for better understanding:
 ### Game Interface
 ![Game Interface](img/Screenshot%202024-05-17%20200345.png)
 
-### Computer Wins
+### User Wins
 ![User Wins](img/Screenshot%202024-05-17%20200414.png)
 
-### Tie
+### Computer Wins
 ![Computer Wins](img/Screenshot%202024-05-17%20200450.png)
 
-### User Wins
+### Tie
 ![Tie](img/Screenshot%202024-05-17%20200512.png)
 
 ## How to Play
@@ -44,6 +44,32 @@ Here are some screenshots of the game for better understanding:
 
 To run this game locally:
 
+### Option 1: Run directly in browser
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sudhanshu25012002/stone-paper-scissor-JavaScript.git
+   git clone https://github.com/Mr-Software30/rock-paper-scissors-game.git
+   cd RPS-Repository
+   ```
+2. Open `index.html` in your web browser.
+
+### Option 2: Run with Docker
+
+1. Clone the repository:
+   ```bash
+   git clone <YOUR_GITHUB_REPO_URL>
+   cd RPS-Repository
+   ```
+
+2. Build and run with Docker:
+   ```bash
+   docker build -t rps-game .
+   docker run -p 8080:80 rps-game
+   ```
+   Then open `http://localhost:8080` in your browser.
+
+3. Or use Docker Compose:
+   ```bash
+   docker-compose up
+   ```
+   Then open `http://localhost:8080` in your browser.
